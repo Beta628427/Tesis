@@ -11,3 +11,4 @@ Ingeniero Mecatrónico
 (Universidad de San Buenaventura - Bogotá)
 camicor__981@live.com
 
+Falta LUCAS
