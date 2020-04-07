@@ -1,0 +1,114 @@
+\cleardoublepage %poner esta linea al inicio de cada capitulo
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Justificación}
+
+El sistema locomotor del humano constantemente realiza movimientos de forma automática (como es el caso de caminar y correr) en superficies regulares e irregulares, así pues, el tobillo al ser la articulación que une la tibia con los huesos del pie, constantemente se somete a distintas magnitudes físicas en diferentes direcciones, por lo tanto, cuando el tobillo es sometido a una fuerza mayor a la que puede soportar genera una lesión esguince tobillo. Dicha lesión es uno de los problemas más comunes en deportistas y en el diario vivir de las personas, provocando dolor, limitaciones funcionales y inestabilidad crónica.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Problema}
+
+En la actualidad para cuantificar la inestabilidad del tobillo, se hace uso de la herramienta conocida como CAIT la cual consiste en un cuestionario cuyas opciones se les asigna un peso, consecuentemente se suman para finalmente determinar el diagnóstico del paciente. Sin embargo, estos resultados dependen del juicio y la interpretación de los usuarios, lo cual puede generar incertidumbre a la hora de cuantificar la inestabilidad del tobillo. 
+
+\nomenclature{CAIT}{Cumberland Anckle Inestability Tool}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Pregunta problema}
+¿Cómo determinar un peso adecuado de las variables que más infieren en la cuantificación de riesgo de esguince lateral de tobillo usando algoritmos de reducción de dimensiones?
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Objetivos}
+
+\subsection{Objetivo General}
+
+Determinar un algoritmo de inteligencia artificial para cualificar el riesgo de padecer una lesión de esguince lateral de tobillo.
+
+\subsection{Objetivos Específicos}
+\begin{itemize}
+	\item Identificar propiedades y condiciones en la marcha en personas que no han sufrido de un esguince lateral de tobillo como referencia.
+	\item Identificar propiedades y condiciones en la marcha en personas que han sufrido de un esguince lateral de tobillo.
+	\item Diseñar la estructura de inteligencia artificial mas adecuado para la cualificación basada en los datos adquiridos por el laboratorio de marcha.
+	\item Verificar y comprobar los datos obtenidos por el algoritmo con el fin de cualificar el estado de una persona para padecer de esguince lateral de tobillo. 
+\end{itemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Alcances y limitaciones}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Marco conceptual}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Introducción}
+% \citep{Diego2017politica}
+
+El esguince de tobillo es por lejos una de las lesiones más comunes para el cuerpo humano tanto en la población general como en la vida de los deportistas, ya que esta articulación está involucrada en la mayoría de las tareas cotidianas. Comprende el 15\% de todas las lesiones relacionadas con el deporte, según la revista de la Universidad Industrial de Santander y la Facultad de Medicina de la Universidad la Salle de México \citep{catalan2018tratamiento} precisan una relación de incidencia de 1:10000 personas diarias afectadas en el mundo, lo cual se traduce en 1,7 millones de habitantes colombianos que padecen esguince de tobillo, siendo la más frecuente la lesión de tobillo de ligamento lateral (“Lateral ankle spring” - LAS). Esta se produce cuando una carga excede los límites de tensión en el complejo ligamentoso lateral, pero no llega a romper los ligamentos o a fracturar los huesos en esta zona, ocasionando problemas en una buena ejecución de la locomoción de la marcha, los cuales se ven reflejados en daños de las neuronas aferentes y en una reorganización sensoriomotora en la interacción pie-superficie como lo demuestran estudios de análisis de marcha posteriores al trauma.\\ 
+Para el tratamiento de lesión de LAS existe un protocolo básico orientado principalmente a la disminución del edema y dolor para lograr una movilización y apoyo temprano, esta se realiza de forma secuencial, durante las fases de inflamación, reparación y remodelación, reevaluando la gravedad de la lesión. Sin embargo, según el estudio realizado por la “Escuela de Salud Pública, Fisioterapia y Ciencias del Deporte” y “University College Dublin” en Dublín, Irlanda, en el artículo “Gait Biomechanics in Participants, Six Months after First-time Lateral Ankle Sprain” se obtuvo un resultado de casi el 50\% de pacientes que desarrollo una inestabilidad crónica del tobillo (“chronic ankle instability” - CAI) las cuales pueden ser inestabilidad mecánica o inestabilidad funcional. La inestabilidad mecánica es debido principalmente a un cambio en la elasticidad de los ligamentos que causa movimientos más allá de fisiológicamente permisibles mientras que la inestabilidad funcional es más de carácter sensorial al percibir desequilibrio debido a un déficit neuromuscular.\\
+
+Para identificar qué personas padecen CAI existen diferentes métodos como la herramienta de inestabilidad del tobillo de Cumberland (“Cumberland ankle instability tool” - CAIT) sin embargo al ser una herramienta de carácter subjetiva, carece de exactitud. Por consiguiente, mediante un enfoque mecatrónico se pretende complementar la herramienta CAIT para determinar el nivel de inestabilidad del tobillo. Se implementará un algoritmo basado en principios de la inteligencia artificial con el fin de poder clasificar el riesgo que posee un paciente posterior a la lesión de padecer nuevamente un esguince de tobillo lateral. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Antecedentes}
+
+En los últimos años la inteligencia artificial ha adquirido alto protagonismo en diferentes campos de investigación y desarrollo tales como el sector de comercio, arquitectura, diseño, comercio electrónico y la medicina. Dentro del campo de la medicina se han desarrollado distintas aplicaciones con las cuales se han mejorado procesos como los que se muestran a continuación:\\
+
+\begin{itemize}
+\item En Polonia se realizó un estudio mediante el cual se encontró ventajas en la utilización de inteligencia artificial para el monitoreo de la recuperación de una lesión en el tendón de Aquiles. Mediante redes neuronales convolucionales se distinguieron los tendones sanos de los heridos obteniendo un 97\% de precisión. Adicionalmente, se determinaron estimaciones de curvas de curación con las capas intermedias de la CNN las cuales pueden ser utilizadas por profesionales para realizar una evaluación precisa del daño del paciente.\\
+\item En  2019 la revista BURNS publicó un artículo titulado “Inteligencia artificial y aprendizaje automático para predecir la lesión renal aguda en quemaduras de pacientes con quemaduras graves: una prueba de concepto”, en el cual se desarrollaron modelos de machine learning utilizando el algoritmo k-nearest neighbor, logrando así un porcentaje de precisión del 90-100\% de los pacientes que padecían lesión renal aguda
+\end{itemize}
+
+Para identificar qué personas padecen CAI existen diferentes métodos como la herramienta de inestabilidad del tobillo de Cumberland (“Cumberland ankle instability tool” - CAIT) que mediante un cuestionario de 9 preguntas busca principalmente medir la inestabilidad funcional de un paciente que ha padecido LAS.
+\\ \\
+El CAIT surge de la derivación de cuestionarios antecedentes como el FAIQ (Functional Ankle Instability Questionnaire) y el AJFAT (Ankle Joint Functional Assessment Toolel) que en un primer momento permitieron medir el grado de inestabilidad de un paciente mediante una comparación con el tobillo sano. Se derivaron preguntas de dichos estudios y de grupos focales de inestabilidad crónica con los cuales se determinaron 12 preguntas. Posteriormente, fueron reducidas a 9 luego de algunas pruebas donde se eliminaron preguntas que mostraron no tener gran relación.
+\\  \\
+La validez del CAIT se realizó mediante una comparación con la escala funcional de extremidad inferior (LEFS) dado que no existía un evaluador de estabilidad funcional hasta el momento. EL LEFS mide la función de las extremidades inferiores permitiendo ver con facilidad los cambios producidos en algún miembro inferior incluyendo anomalías derivadas de una lesión. Adicionalmente se incluyó una escala analógica visual de 10cm para reforzar el puntaje de dolor. Finalmente se validó la construcción por artículos y personas mediante el análisis de Rasch. El análisis de Rasch proporciona intervalos y crea jerarquías para cada elemento y persona. Funciona con estadísticas de bondad de ajuste para garantizar la suposición que se le asigna, en este caso que los pacientes con mayor estabilidad tengan mas probabilidades de obtener un puntaje alto.
+\\ \\
+Sin embargo al ser una herramienta de carácter subjetiva, carece de exactitud. Por consiguiente, mediante un enfoque mecatrónico se pretende complementar la herramienta CAIT para determinar el nivel de inestabilidad del tobillo. Se implementará un algoritmo basado en principios de la inteligencia artificial con el fin de poder clasificar el riesgo que posee un paciente posterior a la lesión de padecer nuevamente un esguince de tobillo lateral.
+\\ \\
+En el mundo de Data Science y los algoritmos de inteligencia artificial supervisados, se invierte mayor tiempo y esfuerzo en el procesamiento de datos, siendo la técnica de reducción de dimensiones una de las más populares, donde se evalúa y escoge las variables con mayor incidencia a una problemática, para dar un ejemplo, si deseamos determinar las variables de la Apnea, suponemos que si una persona tiene el hábito de fumar, es una variable de mayor relevancia o incidencia, a una variable como el “Color de ojos” del paciente.\\ \\
+Los beneficios de reducir las dimensiones son:
+\begin{center}
+\begin{itemize}
+\item Existe un interés en identificar y eliminar variables poco influyentes.
+\item No siempre el mejor modelo trabaja con todas las variables.
+\item Existe mejoras en el rendimiento de la máquina que procesa la información al procesar menos cantidad de variables.
+\item Se facilita el entendimiento de los resultados.
+\end{itemize}
+\end{center}
+Como se mencionó previamente se supone que la variable de “Color de ojos” del paciente o usuario no es de mayor relevancia, pero no es correcto suponer y para eso existen técnicas como PCA o KPCA para la sección de variables más influyentes a un tema determinado.
+En el documento “Figueiredo, Santos, Moreno - 2018 - Automatic recognition of gait patterns in human motor disorders using machine learning A review” comparan y determinan el mejor algoritmo de aprendizaje automático empleado para el reconocimiento de patrones de marcha, obteniendo como mejor resultado un 95.8\% de precisión, utilizando 36 a 39 PC (Componentes principales) de 84 componentes o variables de los usuarios.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Consideraciones teóricas}
+
+Estructura del tobillo:\\
+La articulación del tobillo es de tipo deslizante y se compone de la unión de los huesos tibia y fíbula con el hueso astrágalo del pie. La unión está delimitada principalmente por los ligamentos ubicados entre la tibia y la fíbula evitando que estos huesos se separen, también cuenta con sus correspondientes ligamentos colaterales. El movimiento significativo en esta articulación es dorsiflexión y flexión plantar. Sin embargo, también existen la eversión y la inversión en esta unión que son movimientos más limitados, pero con gran relevancia en el análisis de un esguince de tobillo lateral.\\
+Un esguince de tobillo lateral o LAS por sus siglas en inglés (Lateral ankle spring) sucede cuando en la articulación del tobillo existe una inversión (abducción) que fuerza el ligamento lateral exterior de tal forma que supera una tensión admisible, con posibles rupturas de las fibras del tendón. Por lo general se produce una equimosis y hematoma produciendo dolor y dificultando la estabilidad, por ende, la marcha del paciente. Un esguince lateral puede llegar a ser de tercer grado, en cuyo caso existe una ruptura completa del ligamento.\\
+Inteligencia artificial:\\
+Es a ramificación del campo de la informática que busca recrear comportamientos inteligentes en máquinas. Dentro de esta área existe lo que se denomina Machine learning que es el subcampo dentro de la inteligencia artificial que propone generar algoritmos para que las máquinas no solo puedan imitar estas actividades, sino que también puedan aprender a hacerlas. Desarrollar dichas tareas implica una selección apropiada del método de solución que depende directamente de lo que se proponga realizar. La robótica, el Natural Lenguaje processing o los comandos de voz son solo algunas de las aplicaciones más recurridas dentro del machine learning.\\
+
+Algunos de los principales algoritmos del Machine learning son los siguientes:\\
+\begin{center}
+\begin{itemize}
+\item 1.	Regresión
+\item 2.	Bayesianos
+\item 3.	Agrupación
+\item 4.	Árbol de decisión
+\item 5.	Redes neuronales
+\item 6.	Reducción de dimensión
+\item 7.	Aprendizaje profundo
+\end{itemize}
+\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Metodolog\'ia}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Cronograma}
+\printnomenclature
